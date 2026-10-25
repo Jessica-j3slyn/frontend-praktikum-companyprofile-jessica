@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f5;
+  background-image:
+    linear-gradient(#e4e4e7 1px, transparent 1px),
+    linear-gradient(90deg, #e4e4e7 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: #111111;
+}
+
+.font-display {
+  font-family: var(--font-orbitron), sans-serif;
+}
+
+.chrome-text {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #b8bcc4 40%,
+    #3f444c 52%,
+    #9aa0a8 70%,
+    #e5e7eb 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #111111;
+}
+.chrome-btn {
+  display: inline-block;
+  border: 2px solid #111111;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #d4d7dc 48%,
+    #9ca1a9 52%,
+    #e8eaed 100%
+  );
+  color: #111111;
+  font-weight: 700;
+  box-shadow: 3px 3px 0 #111111;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.chrome-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 #111111;
+}
+
+.card-hard {
+  border: 2px solid #111111;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 4px 4px 0 #111111;
+  overflow: hidden;
+}
+
+a.card-hard {
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+a.card-hard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #111111;
 }
