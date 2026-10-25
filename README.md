@@ -1,4 +1,3 @@
-<img width="1295" height="772" alt="image" src="https://github.com/user-attachments/assets/07b4692a-2699-4663-9a78-b230938b6cfd" /># Chrome Closet
 
 Website company profile sederhana untuk thrift store style Y2K, dibuat dengan **Next.js** sebagai Tugas 4 Praktikum Front-End Programming.
 
