@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chrome Closet
 
-## Getting Started
+Website company profile sederhana untuk thrift store style Y2K, dibuat dengan **Next.js** sebagai Tugas 4 Praktikum Front-End Programming.
 
-First, run the development server:
+## Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Beberapa halaman: **Home**, **About**, **Shop**, dan **Contact**
+- **Dynamic routing** pada halaman detail produk (`/shop/[slug]`)
+- **Reusable components**: `Navbar`, `Footer`, `ProductCard`
+- Navigasi antar halaman memakai komponen `<Link>` dari Next.js
+- **Active link styling** pada Navbar (link halaman aktif berwarna hitam)
+- Tampilan **responsif** untuk layar kecil maupun besar
+- Struktur folder yang rapi, dengan data produk dipisah di folder `data`
+
+## Teknologi
+
+- [Next.js](https://nextjs.org/) (App Router)
+- React dan TypeScript
+- Tailwind CSS
+
+## Struktur Folder
+
+```
+app/
+  layout.tsx              Layout utama (Navbar + Footer)
+  globals.css             Gaya global
+  page.tsx                Halaman Home
+  about/page.tsx          Halaman About
+  shop/page.tsx           Daftar produk
+  shop/[slug]/page.tsx    Detail produk (dynamic route)
+  contact/page.tsx        Halaman Contact
+components/
+  Navbar.tsx
+  Footer.tsx
+  ProductCard.tsx
+data/
+  products.ts             Data produk
+public/
+  products/               Gambar produk
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cara Menjalankan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/Jessica-j3slyn/frontend-praktikum-companyprofile-jessica.git
+   cd frontend-praktikum-companyprofile-jessica
+   ```
+2. Install dependency:
+   ```bash
+   npm install
+   ```
+3. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   ```
+4. Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Halaman
 
-## Learn More
+| Route | Keterangan |
+|---|---|
+| `/` | Home dengan hero dan produk terbaru |
+| `/about` | Profil dan nilai-nilai toko |
+| `/shop` | Daftar semua produk |
+| `/shop/[slug]` | Detail produk, contoh `/shop/baby-tee-butterfly` |
+| `/contact` | Form kontak (simulasi, tanpa backend) |
 
-To learn more about Next.js, take a look at the following resources:
+## Pembuat
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Jessica, Tugas 4 Praktikum Front-End Programming.
