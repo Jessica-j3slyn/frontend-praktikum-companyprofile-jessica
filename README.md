@@ -2,23 +2,23 @@
 
 Website company profile sederhana untuk thrift store style Y2K, dibuat dengan **Next.js** sebagai Tugas 4 Praktikum Front-End Programming.
 
-## Fitur
+# Fitur
 
-- Beberapa halaman: **Home**, **About**, **Shop**, dan **Contact**
-- **Dynamic routing** pada halaman detail produk (`/shop/[slug]`)
-- **Reusable components**: `Navbar`, `Footer`, `ProductCard`
+- Beberapa halaman: Home, About, Shop, dan Contact
+- Dynamic routing pada halaman detail produk (`/shop/[slug]`)
+- Reusable components: `Navbar`, `Footer`, `ProductCard`
 - Navigasi antar halaman memakai komponen `<Link>` dari Next.js
-- **Active link styling** pada Navbar (link halaman aktif berwarna hitam)
-- Tampilan **responsif** untuk layar kecil maupun besar
+- Active link styling pada Navbar (link halaman aktif berwarna hitam)
+- Tampilan responsif untuk layar kecil maupun besar
 - Struktur folder yang rapi, dengan data produk dipisah di folder `data`
 
-## Teknologi
+# Teknologi
 
 - [Next.js](https://nextjs.org/) (App Router)
 - React dan TypeScript
 - Tailwind CSS
 
-## Struktur Folder
+# Struktur Folder
 
 ```
 app/
@@ -39,7 +39,7 @@ public/
   products/               Gambar produk
 ```
 
-## Cara Menjalankan
+# Cara Menjalankan
 
 1. Clone repository ini:
    ```bash
@@ -56,7 +56,7 @@ public/
    ```
 4. Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-## Halaman
+# Halaman
 
 | Route | Keterangan |
 |---|---|
@@ -66,6 +66,3 @@ public/
 | `/shop/[slug]` | Detail produk, contoh `/shop/baby-tee-butterfly` |
 | `/contact` | Form kontak (simulasi, tanpa backend) |
 
-## Pembuat
-
-Jessica, Tugas 4 Praktikum Front-End Programming.
