@@ -74,5 +74,7 @@ about
 <img width="1295" height="772" alt="image" src="https://github.com/user-attachments/assets/41137b50-f5a8-4942-b198-b0d2c0eb9802" />
 contact
 <img width="1135" height="796" alt="image" src="https://github.com/user-attachments/assets/5fc79e49-925c-4dff-a703-6b2bea8632f8" />
+jika di klik salah satu item
+<img width="892" height="526" alt="image" src="https://github.com/user-attachments/assets/15731503-ced9-403c-82ef-35a61556c7cb" />
 
 
